@@ -23,6 +23,22 @@
                 <span>★★★★☆</span>
             </div>
             <button class="buy-now">Order now</button>
+            <!-- Popup Form (Hidden by Default) -->
+<div id="popup-form" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <h2>Payment Form</h2>
+        <label for="telegram">Enter your Telegram username:</label>
+        <input type="text" id="telegram" name="telegram" placeholder="@yourusername">
+        
+        <label for="email">Enter your Email:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com">
+        
+        <label for="wallet">Perfect Money Wallet:</label>
+        <input type="text" id="wallet" value="u5162738838" readonly onclick="copyWallet()">
+        <p class="note">Send 50$ to Perfect Money Wallet and put your username as a note.</p>
+    </div>
+</div>
         </div>
 
         <div class="product-card">
