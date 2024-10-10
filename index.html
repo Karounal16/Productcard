@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card with Carousel</title>
+    <title>Card with Thumbnails Carousel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="product-card">
+        <!-- Main Image -->
+        <img src="image1.jpg" alt="Main Product Image" id="main-image" class="main-image">
+        
+        <!-- Headings -->
         <h2 class="product-title">Grumpy Cartoon Animals In Streetwears</h2>
         <h3 class="product-subtitle">Explore a whimsical world where adorable yet grumpy cartoon animals don trendy streetwear. Each character is rendered in vibrant 3D, showcasing meticulous attention to detail in both texture and expression.</h3>
 
+        <!-- Thumbnail Carousel -->
         <div class="carousel-container">
             <div class="carousel">
-                <img src="image1.jpg" alt="Product Image 1" class="carousel-image">
-                <img src="image2.jpg" alt="Product Image 2" class="carousel-image">
-                <img src="image3.jpg" alt="Product Image 3" class="carousel-image">
-            </div>
-            <div class="carousel-controls">
-                <button id="prevBtn">&lt;</button>
-                <button id="nextBtn">&gt;</button>
+                <img src="image1.jpg" alt="Product Image 1" class="carousel-image thumbnail" data-index="0">
+                <img src="image2.jpg" alt="Product Image 2" class="carousel-image thumbnail" data-index="1">
+                <img src="image3.jpg" alt="Product Image 3" class="carousel-image thumbnail" data-index="2">
             </div>
         </div>
     </div>
