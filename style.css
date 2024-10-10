@@ -17,6 +17,14 @@ body {
     text-align: center;
 }
 
+/* Main Image Styling */
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
 .product-title {
     font-size: 1.5em;
     margin-bottom: 10px;
@@ -28,40 +36,35 @@ body {
     margin-bottom: 20px;
 }
 
+/* Carousel Styling */
 .carousel-container {
-    position: relative;
     width: 100%;
-    overflow: hidden;
+    margin-top: 10px;
 }
 
 .carousel {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    justify-content: space-between;
 }
 
 .carousel-image {
-    min-width: 100%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
     border-radius: 10px;
-}
-
-.carousel-controls {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-}
-
-.carousel-controls button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
     cursor: pointer;
-    border-radius: 50%;
+    transition: border 0.3s;
 }
 
-.carousel-controls button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+.carousel-image:hover {
+    border: 2px solid #007BFF;
 }
+
+.thumbnail {
+    border: 2px solid transparent;
+    transition: border 0.2s;
+}
+
+.thumbnail.active {
+    border: 2px solid #007BFF;
+    }
