@@ -49,7 +49,7 @@ function resetGame() {
 
 // مشاركة رابط الإحالة
 function shareReferral() {
-  const referralLink = `https://yourgame.com/?ref=${chatId}`;
+  const referralLink = `https://t.me/YOUR_BOT?start=${chatId}`;
   sendToTelegram(`شارك هذا الرابط مع أصدقائك: ${referralLink}`);
   alert(`رابط الإحالة الخاص بك: ${referralLink}`);
-}
+  }
