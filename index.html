@@ -27,6 +27,13 @@
       font-size: 20px;
       text-align: center;
     }
+    #resetButton, #shareButton {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -38,6 +45,8 @@
     <div class="cup" id="cup4" onclick="checkCup(4)">4</div>
   </div>
   <div id="message"></div>
+  <button id="resetButton" onclick="resetGame()">إعادة المحاولة</button>
+  <button id="shareButton" onclick="shareReferral()">شارك اللعبة</button>
 
   <script src="app.js"></script>
 </body>
