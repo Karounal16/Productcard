@@ -1,53 +1,29 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>اكتشف الكرة</title>
-  <style>
-    .cup-container {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 50px;
-    }
-    .cup {
-      width: 100px;
-      height: 100px;
-      background-color: #b3b3b3;
-      border-radius: 50%;
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 18px;
-      font-weight: bold;
-    }
-    #message {
-      margin-top: 20px;
-      font-size: 20px;
-      text-align: center;
-    }
-    #resetButton, #shareButton {
-      display: block;
-      margin: 20px auto;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card with Carousel</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 style="text-align: center;">اكتشف الكرة تحت أي كوب</h1>
-  <div class="cup-container">
-    <div class="cup" id="cup1" onclick="checkCup(1)">1</div>
-    <div class="cup" id="cup2" onclick="checkCup(2)">2</div>
-    <div class="cup" id="cup3" onclick="checkCup(3)">3</div>
-    <div class="cup" id="cup4" onclick="checkCup(4)">4</div>
-  </div>
-  <div id="message"></div>
-  <button id="resetButton" onclick="resetGame()">إعادة المحاولة</button>
-  <button id="shareButton" onclick="shareReferral()">شارك اللعبة</button>
+    <div class="product-card">
+        <h2 class="product-title">Product Title</h2>
+        <h3 class="product-subtitle">Product Subtitle</h3>
 
-  <script src="app.js"></script>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="image1.jpg" alt="Product Image 1" class="carousel-image">
+                <img src="image2.jpg" alt="Product Image 2" class="carousel-image">
+                <img src="image3.jpg" alt="Product Image 3" class="carousel-image">
+            </div>
+            <div class="carousel-controls">
+                <button id="prevBtn">&lt;</button>
+                <button id="nextBtn">&gt;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
