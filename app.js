@@ -20,6 +20,15 @@ function sendToTelegram(message) {
   });
 }
 
+// استخراج معرف الإحالة من الـ URL
+const urlParams = new URLSearchParams(window.location.search);
+const referrerId = urlParams.get('ref');
+
+// تسجيل الإحالة (يمكنك إرسالها إلى تليجرام)
+if (referrerId) {
+  sendToTelegram(`تمت الإحالة بواسطة المستخدم: ${referrerId}`);
+}
+
 // دالة التحقق من الكوب المختار
 function checkCup(cupNumber) {
   let message;
@@ -36,4 +45,11 @@ function checkCup(cupNumber) {
 function resetGame() {
   ballPosition = Math.floor(Math.random() * 4) + 1;
   document.getElementById("message").innerText = "";
+}
+
+// مشاركة رابط الإحالة
+function shareReferral() {
+  const referralLink = `https://yourgame.com/?ref=${chatId}`;
+  sendToTelegram(`شارك هذا الرابط مع أصدقائك: ${referralLink}`);
+  alert(`رابط الإحالة الخاص بك: ${referralLink}`);
 }
