@@ -18,21 +18,22 @@ body {
 }
 
 .badge {
-    background-color: #fff;
+    background-color: red;
     color: white;
     padding: 5px 10px;
     position: absolute;
     top: 15px;
     left: 15px;
-    border-radius: 10px;
-    font-size: 15px;
+    border-radius: 5px;
+    font-size: 12px;
 }
 
 .product-image {
-    width: 100px;
-    height: auto;
+    width: 200px; /* Larger width */
+    height: auto; /* Keep the aspect ratio */
     margin: 20px 0;
     transition: opacity 0.3s ease; /* Fade effect */
+    cursor: pointer; /* Indicate that the image can be clicked */
 }
 
 h2 {
@@ -96,8 +97,8 @@ button:hover {
 }
 
 .modal img {
-    width: 80%; /* Adjust the zoomed image size */
-    height: auto;
+    max-width: 90%; /* Ensure the zoomed image fits within the modal */
+    height: auto; /* Maintain the aspect ratio */
     animation: zoom-in 0.5s; /* Zoom-in effect */
 }
 
@@ -111,4 +112,4 @@ button:hover {
         transform: scale(1);
         opacity: 1;
     }
-}
+            }
