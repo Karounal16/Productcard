@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card with Thumbnails Carousel</title>
-    <link rel="stylesheet" href="style.css">
+    <title>coding prompt</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="product-card">
-        <!-- Main Image -->
-        <img src="image1.jpg" alt="Main Product Image" id="main-image" class="main-image">
-        
-        <!-- Headings -->
-        <h2 class="product-title">Grumpy Cartoon Animals In Streetwears</h2>
-        <h3 class="product-subtitle">Explore a whimsical world where adorable yet grumpy cartoon animals don trendy streetwear. Each character is rendered in vibrant 3D, showcasing meticulous attention to detail in both texture and expression.</h3>
+        <div class="badge">New</div>
+        <img id="main-image" src="image1.jpg" alt="product name" class="product-image" onclick="zoomImage()">
+        <h2>$25.00 <span class="original-price">$0.99</span></h2>
+        <p>Fresh Organic Fruit</p>
 
-        <!-- Thumbnail Carousel -->
-        <div class="carousel-container">
-            <div class="carousel">
-                <img src="image1.jpg" alt="Product Image 1" class="carousel-image thumbnail" data-index="0">
-                <img src="image2.jpg" alt="Product Image 2" class="carousel-image thumbnail" data-index="1">
-                <img src="image3.jpg" alt="Product Image 3" class="carousel-image thumbnail" data-index="2">
-            </div>
+        <!-- Carousel -->
+        <div class="carousel">
+            <img src="image1.jpg" class="carousel-thumb" alt="strawberry 1" onclick="changeImage('image1.jpg')">
+            <img src="image2.jpg" class="carousel-thumb" alt="strawberry 2" onclick="changeImage('image2.jpg')">
+            <img src="image3.jpg" class="carousel-thumb" alt="strawberry 3" onclick="changeImage('image3.jpg')">
         </div>
+
+        <button id="order-btn">Order prompt</button>
+    </div>
+
+    <!-- Zoomed Image Modal -->
+    <div id="zoom-modal" class="modal" onclick="closeZoom()">
+        <img id="zoomed-image" src="" alt="Zoomed Image">
     </div>
 
     <script src="script.js"></script>
