@@ -18,14 +18,14 @@ body {
 }
 
 .badge {
-    background-color: black;
+    background-color: #fff;
     color: white;
     padding: 5px 10px;
     position: absolute;
     top: 15px;
     left: 15px;
-    border-radius: 5px;
-    font-size: 12px;
+    border-radius: 10px;
+    font-size: 15px;
 }
 
 .product-image {
