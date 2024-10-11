@@ -18,7 +18,7 @@ body {
 }
 
 .badge {
-    background-color: red;
+    background-color: green;
     color: white;
     padding: 5px 10px;
     position: absolute;
@@ -48,7 +48,7 @@ h2 {
 }
 
 button {
-    background-color:red;
+    background-color: black;
     color: white;
     border: none;
     border-radius: 5px;
@@ -59,7 +59,7 @@ button {
 }
 
 button:hover {
-    background-color: black;
+    background-color: grey;
 }
 
 /* Carousel */
